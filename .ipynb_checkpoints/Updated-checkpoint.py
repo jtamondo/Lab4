@@ -4,7 +4,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
-
+import pysqlite3
+import sys
+sys.modules["sqlite3"] = pysqlite3
 # Retrieve API key from secrets
 openai_api_key = st.secrets["openai"]["api_key"]
 

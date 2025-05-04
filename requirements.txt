@@ -1,10 +1,10 @@
 streamlit
-protobuf==3.20.3  # Downgrade for compatibility with LangChain
-pysqlite3-binary  # Ensure SQLite >= 3.35.0 compatibility
+protobuf==3.20.3  # Ensures compatibility, prevents descriptor errors
+pysqlite3-binary  # Fixes SQLite version issues for Chroma
 langchain
-langchain-community
+langchain-community  # Required for updated LangChain imports
 langchain-openai
-chromadb
+chromadb  # Chroma vector store for retrieval
 openai
 tiktoken
-faiss-cpu  # Optional: For efficient vector storage
+faiss-cpu  # Optional: If using FAISS for optimized retrieval

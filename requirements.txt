@@ -8,3 +8,4 @@ chromadb  # Chroma vector store for retrieval
 openai
 tiktoken
 faiss-cpu  # Optional: If using FAISS for optimized retrieval
+chromadb>=0.4.22

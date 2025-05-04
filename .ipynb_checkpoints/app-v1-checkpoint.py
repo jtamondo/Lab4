@@ -6,7 +6,7 @@ from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 openai_api_key = st.secrets["openai"]["api_key"]
 
-def generate_response(uploaded_file, openai_api_key, query_text):
+def generate_response(uploaded_file, query_text):
     # Load document if file is uploaded
     if uploaded_file is not None:
         documents = [uploaded_file.read().decode()]

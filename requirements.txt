@@ -1,8 +1,10 @@
 streamlit
-protobuf==3.20.3  # Downgrade to avoid descriptor errors
+protobuf==3.20.3  # Downgrade for compatibility with LangChain
+pysqlite3-binary  # Ensure SQLite >= 3.35.0 compatibility
 langchain
 langchain-community
 langchain-openai
 chromadb
 openai
 tiktoken
+faiss-cpu  # Optional: For efficient vector storage
